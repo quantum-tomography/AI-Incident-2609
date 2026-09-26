@@ -68,6 +68,20 @@
       font-style: italic;
       line-height: 1.7;
     }
+    .quote-source{
+      display:block;
+      margin-top:8px;
+      font-style:normal;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .quote-source a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+    .quote-source a:hover{
+      text-decoration:underline;
+    }
 
     /* Reveal blocks */
     .toggleBtn{
@@ -157,6 +171,7 @@ const lessonData = {
           
           <div class="quote">
             "Earlier this week, we detected and responded to an intrusion into part of our production infrastructure. This one was different from anything we had handled before in one important way: it was driven, end to end, by an autonomous AI agent system - and we detected and dissected it largely with AI of our own."
+            <span class="quote-source">— Source: <a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noopener noreferrer">Hugging Face Security Blog (July 2026)</a></span>
           </div>
 
           <p>② Historically, security intrusions were executed by human actors, often leveraging automated scripts for specific tasks. However, this incident demonstrated an entirely autonomous threat actor—an agentic swarm capable of real-time reasoning, tool use, and adaptive exploitation without direct human control.</p>
